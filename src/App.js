@@ -1,25 +1,24 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import logo from "./logo.svg";
+import "./App.css";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <fieldset>
+      <legend>Choose which of the following are good friends:</legend>
+      <div>
+        <input type="checkbox" name="anna" id="check_1" />
+        <label for="friends">Anna</label>
+      </div>
+      <div>
+        <input type="checkbox" name="billy" id="check_1" />
+        <label for="friends">Billy</label>
+      </div>
+      <div>
+        <input type="checkbox" name="carlos" id="check_1" />
+        <label for="friends">Carlos</label>
+      </div>
+    </fieldset>
   );
 }
 
