@@ -4,21 +4,30 @@ import "./App.css";
 
 function App() {
   return (
-    <fieldset>
-      <legend>Choose which of the following are good friends:</legend>
-      <div>
-        <input type="checkbox" name="anna" id="check_1" />
-        <label for="friends">Anna</label>
-      </div>
-      <div>
-        <input type="checkbox" name="billy" id="check_1" />
-        <label for="friends">Billy</label>
-      </div>
-      <div>
-        <input type="checkbox" name="carlos" id="check_1" />
-        <label for="friends">Carlos</label>
-      </div>
-    </fieldset>
+    <main>
+      <h1>Checkbox Example</h1>
+      <fieldset>
+        <legend>Choose which of the following are good friends:</legend>
+        <div>
+          <label for="friends">
+            <input type="checkbox" name="anna" id="anna" />
+            Anna
+          </label>
+        </div>
+        <div>
+          <label for="friends">
+            <input type="checkbox" name="billy" id="billy" />
+            Billy
+          </label>
+        </div>
+        <div>
+          <label for="friends">
+            <input type="checkbox" name="carlos" id="carlos" />
+            Carlos
+          </label>
+        </div>
+      </fieldset>
+    </main>
   );
 }
 
