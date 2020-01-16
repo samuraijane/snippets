@@ -27,28 +27,36 @@ const App = () => {
     <main className="wrap">
       <h1>Checkbox Example</h1>
       <form onSubmit={handleSubmit}>
-        <fieldset>
+        <fieldset aria-describedby="error">
           <legend>Choose which of the following are good friends:</legend>
           <div>
-            <label htmlFor="friends">
+            <label htmlFor="anna">
               <input type="checkbox" name="anna" id="anna" />
               Anna
             </label>
           </div>
           <div>
-            <label htmlFor="friends">
+            <label htmlFor="billy">
               <input type="checkbox" name="billy" id="billy" />
               Billy
             </label>
           </div>
           <div>
-            <label htmlFor="friends">
+            <label htmlFor="carlos">
               <input type="checkbox" name="carlos" id="carlos" />
               Carlos
             </label>
           </div>
         </fieldset>
-        {error ? <p className="error">{error}</p> : ""}
+        <div role="region" aria-live="polite">
+          {error ? (
+            <p className="error" id="error">
+              {error}
+            </p>
+          ) : (
+            ""
+          )}
+        </div>
         <button type="submit">Submit</button>
       </form>
     </main>
